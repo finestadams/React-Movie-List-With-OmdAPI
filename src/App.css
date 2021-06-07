@@ -1,0 +1,147 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: #131720;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+}
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #151f30;
+    z-index: 99;
+    transition: 0.5s, margin 0s;
+}
+.header__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+}
+.header__menu {
+    position: absolute;
+    width: 24px;
+    height: 22px;
+    display: block;
+    left: 0;
+    top: 29px;
+}
+.header__logo {
+    display: block;
+    margin-left: 35px;
+    height: auto;
+    width: 80px;
+}
+.header__logo img {
+    width: 100%;
+    height: auto;
+}
+
+.header__nav-link:hover, .header__nav-link[aria-expanded="true"] {
+    color: #2f80ed;
+}
+.header__nav-link {
+    font-size: 15px;
+    color: #e0e0e0;
+    line-height: 22px;
+    height: 22px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+}
+a{
+	text-decoration: none;
+}
+a:hover, a:active, a:focus {
+    outline: none;
+    text-decoration: none;
+
+}
+@media (min-width: 1200px){
+.header__nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 0;
+    margin-right: 60px;
+}}
+
+.movie-app > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+
+.image-container {
+	position: relative;
+	transition: transform 0.2s;
+	max-width: 300px;
+}
+
+.image-container:hover {
+	cursor: pointer;
+
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.item-center {
+    margin: 0 auto;
+
+}.footer__content {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(47,128,237,0.1);
+}
+@media (min-width: 768px){
+.footer__links {
+    width: auto;
+    order: 2;
+}
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+ }
+
+ img {
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+}
+.item-center h2{
+    text-align: center;
+}
+
+
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
